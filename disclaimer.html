@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Medical Disclaimer for Pilled - Important medical information">
+    <title>Medical Disclaimer - Pilled</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .legal-page {
+            padding-top: calc(var(--spacing-xl) + 60px);
+            padding-bottom: var(--spacing-xl);
+        }
+
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            border: 2px solid var(--color-border);
+        }
+
+        .legal-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+            background: linear-gradient(135deg, var(--color-coral), var(--color-mint));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .legal-meta {
+            color: var(--color-text-lighter);
+            font-size: 0.875rem;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .legal-content h2 {
+            font-size: 1.75rem;
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+            color: var(--color-text);
+        }
+
+        .legal-content h3 {
+            font-size: 1.25rem;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+            color: var(--color-text);
+        }
+
+        .legal-content p {
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.8;
+        }
+
+        .legal-content ul, .legal-content ol {
+            margin-bottom: var(--spacing-md);
+            padding-left: 1.5rem;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+            color: var(--color-text-light);
+            line-height: 1.7;
+        }
+
+        .legal-content strong {
+            color: var(--color-text);
+            font-weight: 600;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 107, 157, 0.15), rgba(255, 142, 142, 0.15));
+            border: 2px solid rgba(255, 107, 157, 0.4);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+        }
+
+        .warning-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .emergency-box {
+            background: linear-gradient(135deg, rgba(255, 107, 157, 0.2), rgba(255, 142, 142, 0.2));
+            border: 3px solid var(--color-coral);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+            text-align: center;
+        }
+
+        .emergency-box p {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-coral);
+            font-weight: 600;
+            text-decoration: none;
+            margin-bottom: var(--spacing-md);
+            transition: var(--transition-smooth);
+        }
+
+        .back-link:hover {
+            gap: 0.75rem;
+        }
+
+        .acknowledgment-box {
+            background: var(--color-text);
+            color: white;
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+            text-align: center;
+        }
+
+        .acknowledgment-box p {
+            color: white;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <div class="pill-icon"></div>
+                    <span>Pilled</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#privacy">Privacy</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Legal Content -->
+    <section class="legal-page">
+        <div class="container">
+            <div class="legal-content">
+                <a href="index.html" class="back-link">
+                    ← Back to Home
+                </a>
+
+                <h1>Medical Disclaimer for Pilled</h1>
+                <div class="legal-meta">
+                    <strong>Last Updated:</strong> November 29, 2025
+                </div>
+
+                <h2>Important Medical Information</h2>
+                <div class="warning-box">
+                    <p><strong>Pilled is a medication tracking tool only. It is NOT medical advice.</strong></p>
+                </div>
+
+                <h3>What Pilled Does:</h3>
+                <ul>
+                    <li>Helps you log when you take medications</li>
+                    <li>Tracks your medication history</li>
+                    <li>Provides visual data about your adherence (premium)</li>
+                    <li>Allows setting optional dosage limit warnings (premium)</li>
+                    <li>Supports recurring medication schedules (premium)</li>
+                </ul>
+
+                <h3>What Pilled Does NOT Do:</h3>
+                <ul>
+                    <li>Provide medical advice or recommendations</li>
+                    <li>Replace your doctor's instructions</li>
+                    <li>Verify medication safety or interactions</li>
+                    <li>Guarantee accuracy of your logged data</li>
+                    <li>Prevent you from taking incorrect dosages</li>
+                    <li>Diagnose or treat any medical condition</li>
+                    <li>Send medication reminders or notifications</li>
+                </ul>
+
+                <h2>Dosage Limits Warning (Premium Feature)</h2>
+                <p>The dosage limit feature provides <strong>warnings only</strong> and does not prevent you from logging doses:</p>
+                <ul>
+                    <li>Limits are user-configured and may be incorrect</li>
+                    <li>Warnings can be dismissed or ignored</li>
+                    <li>The app does not prevent you from exceeding limits</li>
+                    <li>Limits are not verified by medical professionals</li>
+                    <li>You are solely responsible for following your doctor's dosage instructions</li>
+                    <li><strong>Always consult your healthcare provider about safe dosage limits</strong></li>
+                </ul>
+
+                <h2>Your Responsibility</h2>
+                <p>You are responsible for:</p>
+                <ul>
+                    <li>Taking medications as prescribed by your healthcare provider</li>
+                    <li>Verifying medication information is correct</li>
+                    <li>Setting accurate dosage limits (if using premium features)</li>
+                    <li>Consulting your doctor for medical advice</li>
+                    <li>Not relying solely on this app for medication management</li>
+                    <li>Understanding that logged data is only as accurate as what you enter</li>
+                    <li>Following your doctor's instructions, not app warnings</li>
+                </ul>
+
+                <h2>No Medical Relationship</h2>
+                <p>Using Pilled does not create a doctor-patient or healthcare provider relationship. The app developer is not a healthcare provider and provides no medical services.</p>
+
+                <div class="emergency-box">
+                    <p><strong>In case of medical emergency, call 911 or your local emergency number immediately.</strong> Do not rely on this app for emergency medical situations.</p>
+                </div>
+
+                <h2>Accuracy</h2>
+                <p>While we strive for accuracy, Pilled is provided "as is" without warranties. You should:</p>
+                <ul>
+                    <li>Verify all medication information with your healthcare provider</li>
+                    <li>Keep backup records of your medications</li>
+                    <li>Not rely solely on this app for medical decisions</li>
+                </ul>
+
+                <h2>Consult Healthcare Providers</h2>
+                <p>Always consult with your doctor, pharmacist, or qualified healthcare provider regarding:</p>
+                <ul>
+                    <li>Starting or stopping medications</li>
+                    <li>Medication dosages</li>
+                    <li>Drug interactions</li>
+                    <li>Side effects</li>
+                    <li>Any health concerns</li>
+                </ul>
+
+                <h2>Liability</h2>
+                <p>To the fullest extent permitted by law, the developer of Pilled disclaims all liability for any damages arising from use of the app, including but not limited to:</p>
+                <ul>
+                    <li>Missed doses</li>
+                    <li>Incorrect logging</li>
+                    <li>App errors or bugs</li>
+                    <li>Data loss</li>
+                    <li>Health complications</li>
+                </ul>
+
+                <h2>Changes</h2>
+                <p>This disclaimer may be updated at any time. Continued use of the app constitutes acceptance of the current disclaimer.</p>
+
+                <div class="acknowledgment-box">
+                    <p><strong>By using Pilled, you acknowledge that you have read, understood, and agree to this medical disclaimer.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="pill-icon"></div>
+                        <span>Pilled</span>
+                    </a>
+                    <p>Privacy-first medication tracking for iOS</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="index.html#features">Features</a>
+                        <a href="index.html#privacy">Privacy</a>
+                        <a href="index.html#download">Download</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="disclaimer.html">Medical Disclaimer</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://github.com/mattkwiecien/pilled" target="_blank" rel="noopener">GitHub</a>
+                        <a href="mailto:matthew.april@pm.me">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Matthew April. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
