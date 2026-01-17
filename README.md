@@ -153,7 +153,7 @@ Use these URLs in your App Store Connect submission:
 
 ## 💬 Contact
 
-- **Email:** matthew.april@pm.me
+- **Email:** pilled.support@pm.me
 - **Support:** [Buy Me a Coffee](https://www.buymeacoffee.com/mattapril)
 - **GitHub:** [matt-april/pilled](https://github.com/matt-april/pilled) (private)
 

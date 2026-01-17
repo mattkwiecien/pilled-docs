@@ -78,7 +78,7 @@ Since we don't collect any data:
 ## Contact
 
 If you have questions about this privacy policy:
-- **Email:** matthew.april@pm.me
+- **Email:** pilled.support@pm.me
 - **Website:** https://www.buymeacoffee.com/mattapril
 
 ## Legal
