@@ -492,7 +492,9 @@ header {
 .med-tile:nth-child(4) { animation-delay: 1.5s; }
 
 .med-icon {
-    font-size: 2rem;
+    width: 32px;
+    height: 32px;
+    stroke: rgba(255, 255, 255, 0.95);
 }
 
 .med-name {
@@ -539,7 +541,9 @@ header {
 }
 
 .privacy-icon {
-    font-size: 3rem;
+    width: 48px;
+    height: 48px;
+    stroke: var(--color-mint-dark);
     flex-shrink: 0;
 }
 
