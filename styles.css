@@ -521,37 +521,37 @@ header {
 }
 
 /* ============================================
-   PRIVACY BANNER
+   PROBLEM BANNER
    ============================================ */
 
-.privacy-banner {
-    background: linear-gradient(135deg, rgba(168, 230, 207, 0.3), rgba(78, 205, 196, 0.3));
-    border-top: 1px solid rgba(78, 205, 196, 0.4);
-    border-bottom: 1px solid rgba(78, 205, 196, 0.4);
+.problem-banner {
+    background: linear-gradient(135deg, rgba(255, 107, 157, 0.15), rgba(255, 142, 142, 0.15));
+    border-top: 1px solid rgba(255, 107, 157, 0.3);
+    border-bottom: 1px solid rgba(255, 107, 157, 0.3);
     padding: var(--spacing-lg) 0;
 }
 
-.privacy-content {
+.problem-content {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    text-align: left;
 }
 
-.privacy-icon {
+.problem-icon {
     width: 48px;
     height: 48px;
-    stroke: var(--color-mint-dark);
+    stroke: var(--color-coral);
     flex-shrink: 0;
 }
 
-.privacy-content h3 {
+.problem-content h3 {
     margin-bottom: 0.25rem;
+    font-size: 1.5rem;
 }
 
-.privacy-content p {
+.problem-content p {
     margin: 0;
     font-size: 1rem;
 }
@@ -761,6 +761,13 @@ header {
     gap: 0.75rem;
 }
 
+.privacy-warning {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-mint-dark);
+    margin-bottom: var(--spacing-md);
+}
+
 .privacy-visual {
     display: flex;
     justify-content: center;
@@ -822,46 +829,42 @@ header {
 }
 
 /* ============================================
-   TECH STACK SECTION
+   USE CASES SECTION
    ============================================ */
 
-.tech-stack {
+.use-cases {
     background: linear-gradient(135deg, rgba(184, 164, 232, 0.15), rgba(255, 203, 164, 0.15));
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-xl) 0;
 }
 
-.tech-content {
+.use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.use-case {
     text-align: center;
+    padding: var(--spacing-md);
 }
 
-.tech-content h3 {
-    margin-bottom: var(--spacing-md);
+.use-case-icon {
+    width: 40px;
+    height: 40px;
+    stroke: var(--color-coral);
+    margin: 0 auto var(--spacing-sm);
 }
 
-.tech-badges {
-    display: flex;
-    justify-content: center;
-    gap: var(--spacing-sm);
-    flex-wrap: wrap;
+.use-case h4 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
 }
 
-.tech-badge {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    background: white;
-    border: 2px solid var(--color-border);
-    border-radius: var(--radius-pill);
-    font-weight: 600;
-    color: var(--color-text);
-    transition: var(--transition-smooth);
-}
-
-.tech-badge:hover {
-    transform: translateY(-4px);
-    border-color: var(--color-lavender);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+.use-case p {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
 }
 
 /* ============================================
@@ -883,37 +886,20 @@ header {
     margin-bottom: var(--spacing-lg);
 }
 
-.notify-form {
-    max-width: 600px;
-    margin: 0 auto var(--spacing-xl);
-}
-
-.form-group {
-    display: flex;
-    gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-sm);
-}
-
-.form-group input {
-    flex: 1;
-    padding: 1rem 1.5rem;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    border: 2px solid var(--color-border);
-    border-radius: var(--radius-pill);
-    outline: none;
+.app-store-badge {
+    display: inline-block;
+    margin-bottom: var(--spacing-xl);
     transition: var(--transition-smooth);
+    border-radius: 8px;
 }
 
-.form-group input:focus {
-    border-color: var(--color-coral);
-    box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.1);
+.app-store-badge:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.form-note {
-    font-size: 0.875rem;
-    color: var(--color-text-lighter);
-    margin: 0;
+.app-store-badge svg {
+    display: block;
 }
 
 .download-meta {
@@ -1147,12 +1133,21 @@ footer {
         font-size: 1.75rem;
     }
 
+    .problem-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .privacy-content {
         flex-direction: column;
         text-align: center;
     }
 
     .download-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .use-cases-grid {
         grid-template-columns: 1fr;
     }
 }

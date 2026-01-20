@@ -1,16 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pilled - A simple, privacy-focused iOS app for tracking your medications with ease. All data stays on your device.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pilled - A simple, privacy-focused iOS app for tracking your medications with ease. All data stays on your device."
+    />
     <title>Pilled - Privacy-First Medication Tracker for iOS</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Karla:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Floating pill decorations -->
     <div class="pill-bg pill-1"></div>
     <div class="pill-bg pill-2"></div>
@@ -19,387 +25,708 @@
 
     <!-- Header -->
     <header>
-        <nav class="container">
-            <div class="nav-content">
-                <div class="logo">
-                    <div class="pill-icon"></div>
-                    <span>Pilled</span>
-                </div>
-                <div class="nav-links">
-                    <a href="#features">Features</a>
-                    <a href="#privacy">Privacy</a>
-                    <a href="#download">Download</a>
-                </div>
-            </div>
-        </nav>
+      <nav class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <div class="pill-icon"></div>
+            <span>Pilled</span>
+          </div>
+          <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#download">Download</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">Coming Soon to App Store</div>
-                <h1 class="hero-title">
-                    Your medications,<br>
-                    <span class="gradient-text">your privacy</span>
-                </h1>
-                <p class="hero-subtitle">
-                    A beautifully simple iOS app for tracking medications.<br>
-                    All your health data stays on your device—always.
-                </p>
-                <div class="hero-cta">
-                    <button class="btn btn-primary">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-                        </svg>
-                        Notify Me at Launch
-                    </button>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="phone-mockup">
-                    <div class="phone-screen">
-                        <div class="mockup-content">
-                            <div class="mockup-header">
-                                <div class="time">9:41</div>
-                                <div class="status-icons"></div>
-                            </div>
-                            <div class="mockup-title">My Medications</div>
-                            <div class="med-grid">
-                                <div class="med-tile" style="background: linear-gradient(135deg, #FF6B9D 0%, #FF8E8E 100%);">
-                                    <svg class="med-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M10.5 20.5L3.5 13.5c-1.5-1.5-1.5-4 0-5.5s4-1.5 5.5 0l7 7c1.5 1.5 1.5 4 0 5.5s-4 1.5-5.5 0z"/>
-                                        <path d="M8.5 8.5l7 7"/>
-                                    </svg>
-                                    <div class="med-name">Aspirin</div>
-                                </div>
-                                <div class="med-tile" style="background: linear-gradient(135deg, #4ECDC4 0%, #44A3A0 100%);">
-                                    <svg class="med-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M8 19V5c0-1 1-2 2-2h4c1 0 2 1 2 2v14"/>
-                                        <path d="M6 12h12"/>
-                                        <path d="M12 3v6"/>
-                                    </svg>
-                                    <div class="med-name">Inhaler</div>
-                                </div>
-                                <div class="med-tile" style="background: linear-gradient(135deg, #A8E6CF 0%, #7DD3AA 100%);">
-                                    <svg class="med-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"/>
-                                        <circle cx="12" cy="10" r="3"/>
-                                    </svg>
-                                    <div class="med-name">Vitamins</div>
-                                </div>
-                                <div class="med-tile" style="background: linear-gradient(135deg, #FFB347 0%, #FF9A3D 100%);">
-                                    <svg class="med-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
-                                    </svg>
-                                    <div class="med-name">Sleep Aid</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">Available on App Store</div>
+          <h1 class="hero-title">
+            Track your meds.<br />
+            <span class="gradient-text">Keep your privacy.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Other health apps sell your data to insurers. Pilled doesn't because
+            we never collect it. One tap to log, complete history, 100% on your
+            device.
+          </p>
+          <div class="hero-cta">
+            <a href="#download" class="btn btn-primary">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path
+                  d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+                />
+              </svg>
+              Download Free
+            </a>
+            <a href="#features" class="btn btn-secondary">See Features</a>
+          </div>
         </div>
+        <div class="hero-visual">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="mockup-content">
+                <div class="mockup-header">
+                  <div class="time">9:41</div>
+                  <div class="status-icons"></div>
+                </div>
+                <div class="mockup-title">My Medications</div>
+                <div class="med-grid">
+                  <div
+                    class="med-tile"
+                    style="
+                      background: linear-gradient(
+                        135deg,
+                        #ff6b9d 0%,
+                        #ff8e8e 100%
+                      );
+                    "
+                  >
+                    <svg
+                      class="med-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M10.5 20.5L3.5 13.5c-1.5-1.5-1.5-4 0-5.5s4-1.5 5.5 0l7 7c1.5 1.5 1.5 4 0 5.5s-4 1.5-5.5 0z"
+                      />
+                      <path d="M8.5 8.5l7 7" />
+                    </svg>
+                    <div class="med-name">Aspirin</div>
+                  </div>
+                  <div
+                    class="med-tile"
+                    style="
+                      background: linear-gradient(
+                        135deg,
+                        #4ecdc4 0%,
+                        #44a3a0 100%
+                      );
+                    "
+                  >
+                    <svg
+                      class="med-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M8 19V5c0-1 1-2 2-2h4c1 0 2 1 2 2v14" />
+                      <path d="M6 12h12" />
+                      <path d="M12 3v6" />
+                    </svg>
+                    <div class="med-name">Inhaler</div>
+                  </div>
+                  <div
+                    class="med-tile"
+                    style="
+                      background: linear-gradient(
+                        135deg,
+                        #a8e6cf 0%,
+                        #7dd3aa 100%
+                      );
+                    "
+                  >
+                    <svg
+                      class="med-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 22c4-4 8-7.5 8-12a8 8 0 10-16 0c0 4.5 4 8 8 12z"
+                      />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <div class="med-name">Vitamins</div>
+                  </div>
+                  <div
+                    class="med-tile"
+                    style="
+                      background: linear-gradient(
+                        135deg,
+                        #ffb347 0%,
+                        #ff9a3d 100%
+                      );
+                    "
+                  >
+                    <svg
+                      class="med-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                    </svg>
+                    <div class="med-name">Sleep Aid</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Privacy Statement -->
-    <section class="privacy-banner">
-        <div class="container">
-            <div class="privacy-content">
-                <svg class="privacy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    <path d="M9 12l2 2 4-4"/>
-                </svg>
-                <div>
-                    <h3>Zero Data Collection</h3>
-                    <p>All your health data stays on your iPhone. No cloud sync. No tracking. No accounts.</p>
-                </div>
-            </div>
+    <!-- Problem Statement -->
+    <section class="problem-banner">
+      <div class="container">
+        <div class="problem-content">
+          <svg
+            class="problem-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+            <line x1="12" y1="17" x2="12.01" y2="17" />
+          </svg>
+          <div>
+            <h3>Wait, did I already take that?</h3>
+            <p>
+              You're tired, in pain, or just woke up. The last thing you want is
+              to hunt down the bottle and squint at the label to figure out if
+              you can take another dose.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Features Section -->
     <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Everything you need,<br>nothing you don't</h2>
-                <p>Start free with powerful features. Upgrade once for lifetime premium access.</p>
-            </div>
-
-            <div class="features-grid">
-                <!-- Free Features -->
-                <div class="feature-card free-card">
-                    <div class="card-header">
-                        <h3>Free Forever</h3>
-                        <div class="price">$0</div>
-                    </div>
-                    <ul class="feature-list">
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            One-tap medication logging
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            Customizable colors & icons
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            Complete dose history
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            Batch logging for multiple doses
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            Export data as CSV
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            Full dark mode support
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            100% private - local storage only
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Premium Features -->
-                <div class="feature-card premium-card">
-                    <div class="premium-badge">Best Value</div>
-                    <div class="card-header">
-                        <h3>Premium</h3>
-                        <div class="price">
-                            $3.99
-                            <span class="price-note">one-time</span>
-                        </div>
-                    </div>
-                    <p class="premium-subtitle">Everything in Free, plus:</p>
-                    <ul class="feature-list">
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            Visual analytics & adherence charts
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            Recurring meds with auto-logging
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            Dosage limit safety warnings
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            All future premium updates
-                        </li>
-                        <li>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            No subscriptions - pay once, own forever
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2>Everything you need,<br />nothing you don't</h2>
+          <p>
+            Start free with powerful features. Upgrade once for lifetime premium
+            access.
+          </p>
         </div>
+
+        <div class="features-grid">
+          <!-- Free Features -->
+          <div class="feature-card free-card">
+            <div class="card-header">
+              <h3>Free Forever</h3>
+              <div class="price">$0</div>
+            </div>
+            <ul class="feature-list">
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                One-tap medication logging
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Customizable colors & icons
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Complete dose history
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Batch logging for multiple doses
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Export data as CSV
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Full dark mode support
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                100% private - local storage only
+              </li>
+            </ul>
+          </div>
+
+          <!-- Premium Features -->
+          <div class="feature-card premium-card">
+            <div class="premium-badge">Best Value</div>
+            <div class="card-header">
+              <h3>Premium</h3>
+              <div class="price">
+                $3.99
+                <span class="price-note">one-time</span>
+              </div>
+            </div>
+            <p class="premium-subtitle">Everything in Free, plus:</p>
+            <ul class="feature-list">
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Visual analytics & adherence charts
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Recurring meds with auto-logging
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Dosage limit safety warnings
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                All future premium updates
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                No subscriptions - pay once, own forever
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases">
+      <div class="container">
+        <div class="use-cases-grid">
+          <div class="use-case">
+            <svg
+              class="use-case-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+            <h4>One-tap logging</h4>
+            <p>
+              Took your meds? Just tap the tile. No forms, no typing, no
+              friction.
+            </p>
+          </div>
+          <div class="use-case">
+            <svg
+              class="use-case-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            <h4>Instant answers</h4>
+            <p>
+              "When did I last take this?" Open the app and see—no bottle
+              hunting required.
+            </p>
+          </div>
+          <div class="use-case">
+            <svg
+              class="use-case-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="20" x2="18" y2="10" />
+              <line x1="12" y1="20" x2="12" y2="4" />
+              <line x1="6" y1="20" x2="6" y2="14" />
+            </svg>
+            <h4>Visual analytics</h4>
+            <p>
+              See your adherence patterns over time with charts and insights.
+            </p>
+          </div>
+          <div class="use-case">
+            <svg
+              class="use-case-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10 9 9 9 8 9" />
+            </svg>
+            <h4>Export anytime</h4>
+            <p>
+              Download your complete history as CSV for your records or your
+              doctor.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Privacy Details -->
     <section id="privacy" class="privacy-section">
-        <div class="container">
-            <div class="privacy-grid">
-                <div class="privacy-text">
-                    <h2>Your health data<br>belongs to you</h2>
-                    <p class="lead">Unlike other health apps, Pilled stores everything locally on your iPhone using Apple's SwiftData framework.</p>
+      <div class="container">
+        <div class="privacy-grid">
+          <div class="privacy-text">
+            <h2>Your medical data<br />is nobody's business</h2>
+            <p class="lead">
+              Most health apps sell your data to advertisers and insurance
+              companies. Your prescription history, your conditions, your
+              habits, all for sale to the highest bidder.
+            </p>
+            <p class="privacy-warning">
+              Not Pilled. We don't have your data because we never collect it.
+            </p>
 
-                    <div class="privacy-lists">
-                        <div class="privacy-list-section">
-                            <h4>We do NOT:</h4>
-                            <ul class="privacy-list deny-list">
-                                <li>Collect any personal information</li>
-                                <li>Require user accounts</li>
-                                <li>Track your usage</li>
-                                <li>Send data to servers</li>
-                                <li>Use analytics tools</li>
-                                <li>Share your information with anyone</li>
-                            </ul>
-                        </div>
+            <div class="privacy-lists">
+              <div class="privacy-list-section">
+                <h4>We do NOT:</h4>
+                <ul class="privacy-list deny-list">
+                  <li>Collect any personal information</li>
+                  <li>Require user accounts or sign-ups</li>
+                  <li>Sell data to insurance companies</li>
+                  <li>Send anything to servers—ever</li>
+                  <li>Track, analyze, or monetize you</li>
+                </ul>
+              </div>
 
-                        <div class="privacy-list-section">
-                            <h4>We DO:</h4>
-                            <ul class="privacy-list allow-list">
-                                <li>Store all data locally on your device</li>
-                                <li>Allow you to export your data anytime</li>
-                                <li>Use Apple StoreKit for secure purchases</li>
-                                <li>Respect your privacy completely</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <a href="privacy.html" class="text-link">Read our Privacy Policy →</a>
-                </div>
-
-                <div class="privacy-visual">
-                    <div class="privacy-graphic">
-                        <div class="shield-icon">
-                            <svg viewBox="0 0 200 200" fill="none">
-                                <path d="M100 20L160 50V90C160 130 140 160 100 180C60 160 40 130 40 90V50L100 20Z"
-                                      fill="url(#shieldGradient)"
-                                      stroke="#2D3748"
-                                      stroke-width="3"/>
-                                <path d="M75 95L90 110L125 75"
-                                      stroke="#2D3748"
-                                      stroke-width="6"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                                <defs>
-                                    <linearGradient id="shieldGradient" x1="40" y1="20" x2="160" y2="180">
-                                        <stop offset="0%" stop-color="#A8E6CF"/>
-                                        <stop offset="100%" stop-color="#4ECDC4"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <div class="privacy-labels">
-                            <div class="privacy-label" style="animation-delay: 0.2s">Local Storage</div>
-                            <div class="privacy-label" style="animation-delay: 0.4s">No Cloud</div>
-                            <div class="privacy-label" style="animation-delay: 0.6s">No Tracking</div>
-                        </div>
-                    </div>
-                </div>
+              <div class="privacy-list-section">
+                <h4>We DO:</h4>
+                <ul class="privacy-list allow-list">
+                  <li>Store everything locally on your iPhone</li>
+                  <li>Let you export your data as CSV anytime</li>
+                  <li>Use secure Apple payment processing</li>
+                  <li>Give you complete control of your data</li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Tech Stack -->
-    <section class="tech-stack">
-        <div class="container">
-            <div class="tech-content">
-                <h3>Built with modern iOS technology</h3>
-                <div class="tech-badges">
-                    <div class="tech-badge">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                        </svg>
-                        iOS 17.0+
-                    </div>
-                    <div class="tech-badge">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M7.03 2.6a5.35 5.35 0 015.35-5.35h5.35V2.6h-5.35a5.35 5.35 0 01-5.35 5.35H2.6V2.6h4.43zm0 10.7a5.35 5.35 0 015.35 5.35v5.35H7.03v-5.35a5.35 5.35 0 01-5.35-5.35V7.95h5.35v5.35zm10.7 0a5.35 5.35 0 01-5.35 5.35v5.35h5.35a5.35 5.35 0 005.35-5.35v-5.35h-5.35v5.35z"/>
-                        </svg>
-                        SwiftUI
-                    </div>
-                    <div class="tech-badge">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2"/>
-                            <path d="M3 9h18M9 21V9"/>
-                        </svg>
-                        SwiftData
-                    </div>
+            <a href="privacy.html" class="text-link"
+              >Read our Privacy Policy →</a
+            >
+          </div>
+
+          <div class="privacy-visual">
+            <div class="privacy-graphic">
+              <div class="shield-icon">
+                <svg viewBox="0 0 200 200" fill="none">
+                  <path
+                    d="M100 20L160 50V90C160 130 140 160 100 180C60 160 40 130 40 90V50L100 20Z"
+                    fill="url(#shieldGradient)"
+                    stroke="#2D3748"
+                    stroke-width="3"
+                  />
+                  <path
+                    d="M75 95L90 110L125 75"
+                    stroke="#2D3748"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="shieldGradient"
+                      x1="40"
+                      y1="20"
+                      x2="160"
+                      y2="180"
+                    >
+                      <stop offset="0%" stop-color="#A8E6CF" />
+                      <stop offset="100%" stop-color="#4ECDC4" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="privacy-labels">
+                <div class="privacy-label" style="animation-delay: 0.2s">
+                  No Account Required
                 </div>
+                <div class="privacy-label" style="animation-delay: 0.4s">
+                  100% Local Storage
+                </div>
+                <div class="privacy-label" style="animation-delay: 0.6s">
+                  Zero Data Collection
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Download Section -->
     <section id="download" class="download-section">
-        <div class="container">
-            <div class="download-content">
-                <h2>Coming Soon to the App Store</h2>
-                <p>Pilled is currently in development and will be available for download soon.<br>Get notified when we launch!</p>
+      <div class="container">
+        <div class="download-content">
+          <h2>Track your meds. Keep your privacy.</h2>
+          <p>
+            Download Pilled for free. Your health data stays on your
+            device—where it belongs.
+          </p>
 
-                <form class="notify-form" id="notifyForm">
-                    <div class="form-group">
-                        <input type="email" placeholder="Enter your email" required>
-                        <button type="submit" class="btn btn-primary">Notify Me</button>
-                    </div>
-                    <p class="form-note">We'll only email you once when the app launches. No spam, ever.</p>
-                </form>
+          <a
+            href="https://apps.apple.com/us/app/pilled/id6755934727"
+            class="app-store-badge"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              width="180"
+              height="54"
+              viewBox="0 0 180 54"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="180"
+                height="54"
+                rx="8"
+                fill="#2D3748"
+                stroke="#4A5568"
+              />
+              <text
+                x="68"
+                y="22"
+                fill="#A8E6CF"
+                font-size="10"
+                font-family="system-ui"
+              >
+                Download on the
+              </text>
+              <text
+                x="68"
+                y="40"
+                fill="white"
+                font-size="18"
+                font-weight="600"
+                font-family="system-ui"
+              >
+                App Store
+              </text>
+              <path
+                d="M38 14c-1.1 0-2 .9-2 2v22c0 1.1.9 2 2 2h0c1.1 0 2-.9 2-2V16c0-1.1-.9-2-2-2h0z"
+                fill="white"
+              />
+              <path
+                d="M32 20c-.8-.6-1.9-.4-2.5.4l-6.4 8.7c-.6.8-.4 1.9.4 2.5.8.6 1.9.4 2.5-.4l6.4-8.7c.6-.8.4-1.9-.4-2.5z"
+                fill="white"
+              />
+              <path
+                d="M44 20c.8-.6 1.9-.4 2.5.4l6.4 8.7c.6.8.4 1.9-.4 2.5-.8.6-1.9.4-2.5-.4l-6.4-8.7c-.6-.8-.4-1.9.4-2.5z"
+                fill="white"
+              />
+            </svg>
+          </a>
 
-                <div class="download-meta">
-                    <div class="meta-item">
-                        <div class="meta-label">Requirements</div>
-                        <div class="meta-value">iPhone or iPad with iOS 17.0 or later</div>
-                    </div>
-                    <div class="meta-item">
-                        <div class="meta-label">Price</div>
-                        <div class="meta-value">Free (Premium: $3.99 one-time)</div>
-                    </div>
-                    <div class="meta-item">
-                        <div class="meta-label">Size</div>
-                        <div class="meta-value">~5 MB</div>
-                    </div>
-                </div>
+          <div class="download-meta">
+            <div class="meta-item">
+              <div class="meta-label">Requirements</div>
+              <div class="meta-value">iPhone with iOS 17.0+</div>
             </div>
+            <div class="meta-item">
+              <div class="meta-label">Price</div>
+              <div class="meta-value">Free (Premium: $3.99)</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">Size</div>
+              <div class="meta-value">~5 MB</div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <div class="pill-icon"></div>
-                        <span>Pilled</span>
-                    </div>
-                    <p>Privacy-first medication tracking for iOS</p>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">
+              <div class="pill-icon"></div>
+              <span>Pilled</span>
+            </div>
+            <p>Privacy-first medication tracking for iOS</p>
+          </div>
 
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <a href="#features">Features</a>
-                        <a href="#privacy">Privacy</a>
-                        <a href="#download">Download</a>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="disclaimer.html">Medical Disclaimer</a>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4>Connect</h4>
-                        <a href="https://github.com/matt-april/pilled" target="_blank" rel="noopener">GitHub</a>
-                        <a href="mailto:pilled.support@pm.me">Contact</a>
-                    </div>
-                </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Product</h4>
+              <a href="#features">Features</a>
+              <a href="#privacy">Privacy</a>
+              <a href="#download">Download</a>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2026 Matthew April. All rights reserved.</p>
-                <p class="disclaimer-text">
-                    <strong>Important:</strong> Pilled is a tracking tool, not medical advice. Always follow your doctor's instructions. In case of emergency, call 911.
-                </p>
+            <div class="footer-column">
+              <h4>Legal</h4>
+              <a href="privacy.html">Privacy Policy</a>
+              <a href="disclaimer.html">Medical Disclaimer</a>
             </div>
+
+            <div class="footer-column">
+              <h4>Connect</h4>
+              <a
+                href="https://github.com/matt-april/pilled"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+              <a href="mailto:pilled.support@pm.me">Contact</a>
+            </div>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Matthew April. All rights reserved.</p>
+          <p class="disclaimer-text">
+            <strong>Important:</strong> Pilled is a tracking tool, not medical
+            advice. Always follow your doctor's instructions. In case of
+            emergency, call 911.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
